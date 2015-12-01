@@ -14,7 +14,7 @@ namespace QLBIDA
         [STAThread]
         static void Main()
         {
-            //tran quang vu hehe
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
