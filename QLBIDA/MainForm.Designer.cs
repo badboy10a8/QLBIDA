@@ -1,6 +1,6 @@
 ﻿namespace QLBIDA
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.listView1 = new System.Windows.Forms.ListView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bntGoiMon = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@
             this.hiểnThịTấtCảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.thêmThựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -82,6 +83,7 @@
             this.bntGoiMon.Text = "Gọi món";
             this.bntGoiMon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntGoiMon.UseVisualStyleBackColor = true;
+            this.bntGoiMon.Click += new System.EventHandler(this.bntGoiMon_Click);
             // 
             // bntThucDon
             // 
@@ -95,6 +97,7 @@
             this.bntThucDon.Text = "Thực đơn";
             this.bntThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntThucDon.UseVisualStyleBackColor = true;
+            this.bntThucDon.Click += new System.EventHandler(this.bntThucDon_Click);
             // 
             // bntTinhTien
             // 
@@ -207,7 +210,14 @@
             this.thêmThựcĐơnToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.thêmThựcĐơnToolStripMenuItem.Text = "Thêm thực đơn";
             // 
-            // Form1
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "controng.jpg");
+            this.imageList1.Images.SetKeyName(1, "hettrong.jpg");
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,7 +231,9 @@
             this.Controls.Add(this.bntThucDon);
             this.Controls.Add(this.bntGoiMon);
             this.Controls.Add(this.listView1);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý quán bida";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -251,6 +263,7 @@
         private System.Windows.Forms.ToolStripMenuItem hiểnThịTấtCảToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thêmThựcĐơnToolStripMenuItem;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

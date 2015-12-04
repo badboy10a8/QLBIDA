@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLBIDA
 {
-    public partial class Form1 : Form
+    public partial class GoiMon : Form
     {
-        public Form1()
+        public GoiMon()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
