@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.listView1 = new System.Windows.Forms.ListView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.luoi = new System.Windows.Forms.DataGridView();
             this.bntGoiMon = new System.Windows.Forms.Button();
             this.bntThucDon = new System.Windows.Forms.Button();
             this.bntTinhTien = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txttongtien = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.thêmBànMớiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hiểnThịBànCóKháchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +48,8 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.thêmThựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.thongtin = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.luoi)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -62,14 +63,14 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // dataGridView1
+            // luoi
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 14);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(462, 331);
-            this.dataGridView1.TabIndex = 1;
+            this.luoi.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.luoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.luoi.Location = new System.Drawing.Point(16, 14);
+            this.luoi.Name = "luoi";
+            this.luoi.Size = new System.Drawing.Size(462, 304);
+            this.luoi.TabIndex = 1;
             // 
             // bntGoiMon
             // 
@@ -135,7 +136,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.thongtin);
+            this.groupBox1.Controls.Add(this.luoi);
             this.groupBox1.Location = new System.Drawing.Point(12, 257);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(498, 351);
@@ -154,14 +156,14 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Tổng tiền:";
             // 
-            // label2
+            // txttongtien
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(522, 580);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "label2";
+            this.txttongtien.AutoSize = true;
+            this.txttongtien.Location = new System.Drawing.Point(522, 580);
+            this.txttongtien.Name = "txttongtien";
+            this.txttongtien.Size = new System.Drawing.Size(35, 13);
+            this.txttongtien.TabIndex = 9;
+            this.txttongtien.Text = "label2";
             // 
             // contextMenuStrip1
             // 
@@ -217,12 +219,21 @@
             this.imageList1.Images.SetKeyName(0, "controng.jpg");
             this.imageList1.Images.SetKeyName(1, "hettrong.jpg");
             // 
+            // thongtin
+            // 
+            this.thongtin.AutoSize = true;
+            this.thongtin.Location = new System.Drawing.Point(386, 335);
+            this.thongtin.Name = "thongtin";
+            this.thongtin.Size = new System.Drawing.Size(35, 13);
+            this.thongtin.TabIndex = 2;
+            this.thongtin.Text = "label3";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 620);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -235,8 +246,9 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý quán bida";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luoi)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -247,7 +259,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView luoi;
         private System.Windows.Forms.Button bntGoiMon;
         private System.Windows.Forms.Button bntThucDon;
         private System.Windows.Forms.Button bntTinhTien;
@@ -255,7 +267,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txttongtien;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem thêmBànMớiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hiểnThịBànCóKháchToolStripMenuItem;
@@ -264,6 +276,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thêmThựcĐơnToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label thongtin;
     }
 }
 

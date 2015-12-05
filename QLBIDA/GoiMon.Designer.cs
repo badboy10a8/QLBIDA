@@ -32,23 +32,24 @@
             this.btnNhapLai = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
-            this.txtDonViTinh = new System.Windows.Forms.TextBox();
-            this.txtGiaTien = new System.Windows.Forms.TextBox();
+            this.txtsoluong = new System.Windows.Forms.TextBox();
+            this.txtgiatien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.cbTenMon = new System.Windows.Forms.ComboBox();
-            this.cbMaBan = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.RBluu = new System.Windows.Forms.RadioButton();
+            this.ctenmon = new System.Windows.Forms.ComboBox();
+            this.cmaban = new System.Windows.Forms.ComboBox();
+            this.luoi = new System.Windows.Forms.DataGridView();
+            this.thongtin = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.luoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNhapLai
             // 
             this.btnNhapLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhapLai.Location = new System.Drawing.Point(504, 101);
+            this.btnNhapLai.Location = new System.Drawing.Point(382, 101);
             this.btnNhapLai.Name = "btnNhapLai";
             this.btnNhapLai.Size = new System.Drawing.Size(75, 23);
             this.btnNhapLai.TabIndex = 21;
@@ -58,7 +59,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(410, 101);
+            this.btnThem.Location = new System.Drawing.Point(301, 101);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 20;
@@ -68,26 +69,26 @@
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(307, 101);
+            this.btnOK.Location = new System.Drawing.Point(220, 101);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 19;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
-            // txtDonViTinh
+            // txtsoluong
             // 
-            this.txtDonViTinh.Location = new System.Drawing.Point(387, 60);
-            this.txtDonViTinh.Name = "txtDonViTinh";
-            this.txtDonViTinh.Size = new System.Drawing.Size(169, 20);
-            this.txtDonViTinh.TabIndex = 18;
+            this.txtsoluong.Location = new System.Drawing.Point(387, 60);
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(169, 20);
+            this.txtsoluong.TabIndex = 18;
             // 
-            // txtGiaTien
+            // txtgiatien
             // 
-            this.txtGiaTien.Location = new System.Drawing.Point(387, 22);
-            this.txtGiaTien.Name = "txtGiaTien";
-            this.txtGiaTien.Size = new System.Drawing.Size(169, 20);
-            this.txtGiaTien.TabIndex = 17;
+            this.txtgiatien.Location = new System.Drawing.Point(387, 22);
+            this.txtgiatien.Name = "txtgiatien";
+            this.txtgiatien.Size = new System.Drawing.Size(169, 20);
+            this.txtgiatien.TabIndex = 17;
             // 
             // label4
             // 
@@ -129,57 +130,67 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Tên món";
             // 
-            // radioButton1
+            // RBluu
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(107, 101);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 17);
-            this.radioButton1.TabIndex = 22;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Lưu";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RBluu.AutoSize = true;
+            this.RBluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RBluu.Location = new System.Drawing.Point(107, 101);
+            this.RBluu.Name = "RBluu";
+            this.RBluu.Size = new System.Drawing.Size(46, 17);
+            this.RBluu.TabIndex = 22;
+            this.RBluu.TabStop = true;
+            this.RBluu.Text = "Lưu";
+            this.RBluu.UseVisualStyleBackColor = true;
             // 
-            // cbTenMon
+            // ctenmon
             // 
-            this.cbTenMon.FormattingEnabled = true;
-            this.cbTenMon.Location = new System.Drawing.Point(107, 21);
-            this.cbTenMon.Name = "cbTenMon";
-            this.cbTenMon.Size = new System.Drawing.Size(121, 21);
-            this.cbTenMon.TabIndex = 23;
+            this.ctenmon.FormattingEnabled = true;
+            this.ctenmon.Location = new System.Drawing.Point(107, 21);
+            this.ctenmon.Name = "ctenmon";
+            this.ctenmon.Size = new System.Drawing.Size(121, 21);
+            this.ctenmon.TabIndex = 23;
             // 
-            // cbMaBan
+            // cmaban
             // 
-            this.cbMaBan.FormattingEnabled = true;
-            this.cbMaBan.Location = new System.Drawing.Point(107, 59);
-            this.cbMaBan.Name = "cbMaBan";
-            this.cbMaBan.Size = new System.Drawing.Size(121, 21);
-            this.cbMaBan.TabIndex = 24;
+            this.cmaban.FormattingEnabled = true;
+            this.cmaban.Location = new System.Drawing.Point(107, 59);
+            this.cmaban.Name = "cmaban";
+            this.cmaban.Size = new System.Drawing.Size(121, 21);
+            this.cmaban.TabIndex = 24;
             // 
-            // dataGridView1
+            // luoi
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 130);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(607, 241);
-            this.dataGridView1.TabIndex = 25;
+            this.luoi.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.luoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.luoi.Location = new System.Drawing.Point(2, 130);
+            this.luoi.Name = "luoi";
+            this.luoi.Size = new System.Drawing.Size(607, 241);
+            this.luoi.TabIndex = 25;
+            // 
+            // thongtin
+            // 
+            this.thongtin.AutoSize = true;
+            this.thongtin.Location = new System.Drawing.Point(488, 111);
+            this.thongtin.Name = "thongtin";
+            this.thongtin.Size = new System.Drawing.Size(35, 13);
+            this.thongtin.TabIndex = 26;
+            this.thongtin.Text = "label5";
             // 
             // GoiMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 377);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cbMaBan);
-            this.Controls.Add(this.cbTenMon);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.thongtin);
+            this.Controls.Add(this.luoi);
+            this.Controls.Add(this.cmaban);
+            this.Controls.Add(this.ctenmon);
+            this.Controls.Add(this.RBluu);
             this.Controls.Add(this.btnNhapLai);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.txtDonViTinh);
-            this.Controls.Add(this.txtGiaTien);
+            this.Controls.Add(this.txtsoluong);
+            this.Controls.Add(this.txtgiatien);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -187,7 +198,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GoiMon";
             this.Text = "Gọi món";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,15 +209,16 @@
         private System.Windows.Forms.Button btnNhapLai;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.TextBox txtDonViTinh;
-        private System.Windows.Forms.TextBox txtGiaTien;
+        private System.Windows.Forms.TextBox txtsoluong;
+        private System.Windows.Forms.TextBox txtgiatien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.ComboBox cbTenMon;
-        private System.Windows.Forms.ComboBox cbMaBan;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton RBluu;
+        private System.Windows.Forms.ComboBox ctenmon;
+        private System.Windows.Forms.ComboBox cmaban;
+        private System.Windows.Forms.DataGridView luoi;
+        private System.Windows.Forms.Label thongtin;
     }
 }
