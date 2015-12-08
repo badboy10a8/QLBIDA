@@ -49,6 +49,7 @@
             this.thêmThựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.thongtin = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.luoi)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -79,7 +80,7 @@
             this.bntGoiMon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntGoiMon.Location = new System.Drawing.Point(525, 271);
             this.bntGoiMon.Name = "bntGoiMon";
-            this.bntGoiMon.Size = new System.Drawing.Size(120, 58);
+            this.bntGoiMon.Size = new System.Drawing.Size(120, 42);
             this.bntGoiMon.TabIndex = 2;
             this.bntGoiMon.Text = "Gọi món";
             this.bntGoiMon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -91,9 +92,9 @@
             this.bntThucDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntThucDon.Image = ((System.Drawing.Image)(resources.GetObject("bntThucDon.Image")));
             this.bntThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntThucDon.Location = new System.Drawing.Point(525, 335);
+            this.bntThucDon.Location = new System.Drawing.Point(525, 319);
             this.bntThucDon.Name = "bntThucDon";
-            this.bntThucDon.Size = new System.Drawing.Size(120, 58);
+            this.bntThucDon.Size = new System.Drawing.Size(120, 42);
             this.bntThucDon.TabIndex = 3;
             this.bntThucDon.Text = "Thực đơn";
             this.bntThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,22 +106,23 @@
             this.bntTinhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntTinhTien.Image = ((System.Drawing.Image)(resources.GetObject("bntTinhTien.Image")));
             this.bntTinhTien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntTinhTien.Location = new System.Drawing.Point(525, 399);
+            this.bntTinhTien.Location = new System.Drawing.Point(525, 367);
             this.bntTinhTien.Name = "bntTinhTien";
-            this.bntTinhTien.Size = new System.Drawing.Size(120, 58);
+            this.bntTinhTien.Size = new System.Drawing.Size(120, 42);
             this.bntTinhTien.TabIndex = 4;
             this.bntTinhTien.Text = "Tính tiền";
             this.bntTinhTien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntTinhTien.UseVisualStyleBackColor = true;
+            this.bntTinhTien.Click += new System.EventHandler(this.bntTinhTien_Click);
             // 
             // bntInHoaDon
             // 
             this.bntInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntInHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("bntInHoaDon.Image")));
             this.bntInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntInHoaDon.Location = new System.Drawing.Point(525, 463);
+            this.bntInHoaDon.Location = new System.Drawing.Point(525, 415);
             this.bntInHoaDon.Name = "bntInHoaDon";
-            this.bntInHoaDon.Size = new System.Drawing.Size(120, 58);
+            this.bntInHoaDon.Size = new System.Drawing.Size(120, 42);
             this.bntInHoaDon.TabIndex = 5;
             this.bntInHoaDon.Text = "In hóa đơn";
             this.bntInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -228,11 +230,26 @@
             this.thongtin.TabIndex = 2;
             this.thongtin.Text = "label3";
             // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(525, 463);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 42);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Nhân viên";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 620);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -277,6 +294,7 @@
         private System.Windows.Forms.ToolStripMenuItem thêmThựcĐơnToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label thongtin;
+        private System.Windows.Forms.Button button1;
     }
 }
 
