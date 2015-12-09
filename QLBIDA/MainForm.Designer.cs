@@ -238,7 +238,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(525, 463);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 42);
+            this.button1.Size = new System.Drawing.Size(120, 46);
             this.button1.TabIndex = 10;
             this.button1.Text = "Nhân viên";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
