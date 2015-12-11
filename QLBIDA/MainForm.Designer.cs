@@ -41,10 +41,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txttongtien = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.thêmBànMớiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hiểnThịBànCóKháchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hiểnThịBànChưaCóKháchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hiểnThịTấtCảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_themban = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_banconguoi = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_banchuaconguoi = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_allban = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.thêmThựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -171,36 +171,36 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmBànMớiToolStripMenuItem,
-            this.hiểnThịBànCóKháchToolStripMenuItem,
-            this.hiểnThịBànChưaCóKháchToolStripMenuItem,
-            this.hiểnThịTấtCảToolStripMenuItem});
+            this.menu_themban,
+            this.menu_banconguoi,
+            this.menu_banchuaconguoi,
+            this.menu_allban});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(220, 92);
             // 
-            // thêmBànMớiToolStripMenuItem
+            // menu_themban
             // 
-            this.thêmBànMớiToolStripMenuItem.Name = "thêmBànMớiToolStripMenuItem";
-            this.thêmBànMớiToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.thêmBànMớiToolStripMenuItem.Text = "Thêm bàn mới";
+            this.menu_themban.Name = "menu_themban";
+            this.menu_themban.Size = new System.Drawing.Size(219, 22);
+            this.menu_themban.Text = "Thêm bàn mới";
             // 
-            // hiểnThịBànCóKháchToolStripMenuItem
+            // menu_banconguoi
             // 
-            this.hiểnThịBànCóKháchToolStripMenuItem.Name = "hiểnThịBànCóKháchToolStripMenuItem";
-            this.hiểnThịBànCóKháchToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.hiểnThịBànCóKháchToolStripMenuItem.Text = "Hiển thị bàn có khách";
+            this.menu_banconguoi.Name = "menu_banconguoi";
+            this.menu_banconguoi.Size = new System.Drawing.Size(219, 22);
+            this.menu_banconguoi.Text = "Hiển thị bàn có khách";
             // 
-            // hiểnThịBànChưaCóKháchToolStripMenuItem
+            // menu_banchuaconguoi
             // 
-            this.hiểnThịBànChưaCóKháchToolStripMenuItem.Name = "hiểnThịBànChưaCóKháchToolStripMenuItem";
-            this.hiểnThịBànChưaCóKháchToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.hiểnThịBànChưaCóKháchToolStripMenuItem.Text = "Hiển thị bàn chưa có khách";
+            this.menu_banchuaconguoi.Name = "menu_banchuaconguoi";
+            this.menu_banchuaconguoi.Size = new System.Drawing.Size(219, 22);
+            this.menu_banchuaconguoi.Text = "Hiển thị bàn chưa có khách";
             // 
-            // hiểnThịTấtCảToolStripMenuItem
+            // menu_allban
             // 
-            this.hiểnThịTấtCảToolStripMenuItem.Name = "hiểnThịTấtCảToolStripMenuItem";
-            this.hiểnThịTấtCảToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.hiểnThịTấtCảToolStripMenuItem.Text = "Hiển thị tất cả";
+            this.menu_allban.Name = "menu_allban";
+            this.menu_allban.Size = new System.Drawing.Size(219, 22);
+            this.menu_allban.Text = "Hiển thị tất cả";
             // 
             // contextMenuStrip2
             // 
@@ -288,10 +288,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label txttongtien;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem thêmBànMớiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hiểnThịBànCóKháchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hiểnThịBànChưaCóKháchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hiểnThịTấtCảToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menu_themban;
+        private System.Windows.Forms.ToolStripMenuItem menu_banconguoi;
+        private System.Windows.Forms.ToolStripMenuItem menu_banchuaconguoi;
+        private System.Windows.Forms.ToolStripMenuItem menu_allban;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thêmThựcĐơnToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
