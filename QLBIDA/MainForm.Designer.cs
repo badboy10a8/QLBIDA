@@ -36,7 +36,7 @@
             this.bntThucDon = new System.Windows.Forms.Button();
             this.bntTinhTien = new System.Windows.Forms.Button();
             this.bntInHoaDon = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txttongtien = new System.Windows.Forms.Label();
@@ -129,13 +129,13 @@
             this.bntInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntInHoaDon.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(651, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 596);
-            this.panel1.TabIndex = 6;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(651, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(396, 596);
+            this.panel2.TabIndex = 6;
             // 
             // groupBox1
             // 
@@ -255,7 +255,7 @@
             this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.bntInHoaDon);
             this.Controls.Add(this.bntTinhTien);
             this.Controls.Add(this.bntThucDon);
@@ -283,7 +283,7 @@
         private System.Windows.Forms.Button bntThucDon;
         private System.Windows.Forms.Button bntTinhTien;
         private System.Windows.Forms.Button bntInHoaDon;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label txttongtien;
