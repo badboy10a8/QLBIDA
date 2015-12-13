@@ -1,28 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace QLBIDA
 {
-    class ketnoi
+    class Ketnoi
     {
-            public SqlConnection mycn = new SqlConnection();
-            public void connect()
+            public SqlConnection Mycn = new SqlConnection();
+            public void Connect()
             {
 
                 string chuoikn = @"Data Source=QUANGVU-PC;Initial Catalog=QLBD;Integrated Security=True";
-                mycn.ConnectionString = chuoikn;
-                if (mycn.State != ConnectionState.Open)
+                Mycn.ConnectionString = chuoikn;
+                if (Mycn.State != ConnectionState.Open)
                 {
-                    mycn.Open();
+                    Mycn.Open();
                 }
                 else
                 {
-                    mycn.Close();
+                    Mycn.Close();
                 }
             }
         }
