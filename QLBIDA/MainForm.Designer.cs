@@ -39,7 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txttongtien = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menu_themban = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_banconguoi = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,8 +47,9 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.thêmThựcĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.thongtin = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.thongtin = new System.Windows.Forms.Label();
+            this.txttongtien = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.luoi)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -63,7 +63,7 @@
             this.listView1.Size = new System.Drawing.Size(633, 239);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_Click);
             // 
             // luoi
             // 
@@ -159,15 +159,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Tổng tiền:";
             // 
-            // txttongtien
-            // 
-            this.txttongtien.AutoSize = true;
-            this.txttongtien.Location = new System.Drawing.Point(522, 580);
-            this.txttongtien.Name = "txttongtien";
-            this.txttongtien.Size = new System.Drawing.Size(35, 13);
-            this.txttongtien.TabIndex = 9;
-            this.txttongtien.Text = "label2";
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -222,15 +213,6 @@
             this.imageList1.Images.SetKeyName(0, "controng.jpg");
             this.imageList1.Images.SetKeyName(1, "hettrong.jpg");
             // 
-            // thongtin
-            // 
-            this.thongtin.AutoSize = true;
-            this.thongtin.Location = new System.Drawing.Point(386, 335);
-            this.thongtin.Name = "thongtin";
-            this.thongtin.Size = new System.Drawing.Size(35, 13);
-            this.thongtin.TabIndex = 2;
-            this.thongtin.Text = "label3";
-            // 
             // button1
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -245,6 +227,22 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // thongtin
+            // 
+            this.thongtin.AutoSize = true;
+            this.thongtin.Location = new System.Drawing.Point(386, 335);
+            this.thongtin.Name = "thongtin";
+            this.thongtin.Size = new System.Drawing.Size(0, 13);
+            this.thongtin.TabIndex = 2;
+            // 
+            // txttongtien
+            // 
+            this.txttongtien.AutoSize = true;
+            this.txttongtien.Location = new System.Drawing.Point(522, 580);
+            this.txttongtien.Name = "txttongtien";
+            this.txttongtien.Size = new System.Drawing.Size(0, 13);
+            this.txttongtien.TabIndex = 9;
             // 
             // MainForm
             // 
@@ -265,6 +263,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý quán bida";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.luoi)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -286,7 +285,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label txttongtien;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menu_themban;
         private System.Windows.Forms.ToolStripMenuItem menu_banconguoi;
@@ -295,8 +293,9 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thêmThựcĐơnToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Label thongtin;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label thongtin;
+        private System.Windows.Forms.Label txttongtien;
     }
 }
 

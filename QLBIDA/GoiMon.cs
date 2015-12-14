@@ -133,7 +133,7 @@ namespace QLBIDA
             Ketnoi kn = new Ketnoi();
             SqlCommand mycm = new SqlCommand();
             mycm.Connection = kn.Mycn;
-            mycm.CommandText = "exec sualaiban @maban,@tenban,@soluongkhach,@checkban";
+            mycm.CommandText = "exec Sualaiban @maban,@tenban,@soluongkhach,@checkban";
             mycm.Parameters.Add("@maban", SqlDbType.NVarChar, 20).Value = thongtin.Text;
             mycm.Parameters.Add("@tenban", SqlDbType.NVarChar, 20).Value = thongtin.Text;
             mycm.Parameters.Add("@soluongkhach", SqlDbType.Int).Value = "1";
